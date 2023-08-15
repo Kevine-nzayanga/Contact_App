@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Contact_Information</string>
+    <string name="email_is_required">Email is required</string>
+    <string name="contacts_is_required">contacts is required</string>
+</resources>

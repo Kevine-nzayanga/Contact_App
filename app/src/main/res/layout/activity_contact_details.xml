@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.ContactDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivavatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ruthb" />
+
+    <ImageView
+        android:id="@+id/ivcall"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/ivavatar"
+        app:layout_constraintTop_toBottomOf="@+id/ivavatar"
+        app:srcCompat="@drawable/baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/ivtext"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivavatar"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@+id/ivcall"
+        app:layout_constraintTop_toBottomOf="@+id/ivavatar"
+        app:srcCompat="@drawable/baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/ivedit"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_drive_file_rename_outline_24" />
+
+    <TextView
+        android:id="@+id/tvnamedetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
+        android:textSize="24dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivcall" />
+
+    <TextView
+        android:id="@+id/tvemaildetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="20dp"
+        android:textSize="24dp"
+        android:text="Email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvnamedetails" />
+
+    <TextView
+        android:id="@+id/tvnumdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="24dp"
+        android:textSize="24dp"
+        android:text="Phone number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvemaildetails" />
+</androidx.constraintlayout.widget.ConstraintLayout>
