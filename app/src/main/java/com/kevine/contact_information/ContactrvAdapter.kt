@@ -10,6 +10,7 @@ import com.kevine.contact_information.model.ContactData
 import com.kevine.contact_information.ui.ContactDetailsActivity
 import com.squareup.picasso.Picasso
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
+import java.io.File
 
 class ContactrvAdapter (var contactList: List<ContactData>,val context:Context):RecyclerView.Adapter<ContactViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactViewHolder {
@@ -29,7 +30,7 @@ class ContactrvAdapter (var contactList: List<ContactData>,val context:Context):
             if (contact.image.isNotBlank()) {
                 Picasso
                     .get()
-                    .load(contact.image)
+                    .load(File(contact.image))
                     .resize(80, 80)
                     .centerCrop()
                     .transform(CropCircleTransformation())

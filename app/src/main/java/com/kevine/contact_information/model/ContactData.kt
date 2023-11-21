@@ -3,7 +3,7 @@ package com.kevine.contact_information.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-//this tells room to create a table out of this data class if tou leave it its contactdata but we can name it contacts
+//this tells room to create a table out of this data class if you leave it its contactdata but we can name it contacts
 
 @Entity (tableName = "Contacts")
 data class ContactData(

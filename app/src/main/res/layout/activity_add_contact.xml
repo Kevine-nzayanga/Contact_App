@@ -11,12 +11,12 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:text="Add Contact"
         android:textSize="34sp"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,8 +96,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="144dp"
-        android:layout_height="117dp"
+        android:layout_width="159dp"
+        android:layout_height="161dp"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="24dp"
         app:layout_constraintBottom_toTopOf="@+id/tlname"

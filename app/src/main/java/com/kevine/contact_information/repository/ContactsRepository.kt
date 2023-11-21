@@ -25,6 +25,10 @@ class ContactsRepository {
         return database.contactDao().getContactById(contactId)
     }
 
+     suspend fun deletecontact(contactId: Int){
+         database.contactDao().deleteContact(contactId)
+    }
+
 
 
 
